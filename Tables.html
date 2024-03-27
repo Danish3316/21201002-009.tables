@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        thead{
+            color: rgb(99, 88, 88);
+        }
+        .tables{
+            width: 100%;
+            border-collapse: collapse;
+            padding: 12px;
+            margin: 12px;
+        }
+        .tables th .tables td{
+            border: 2px solid #ddd;
+            padding: 10px;
+            text-align: left;
+            
+        }
+        .tables th{
+            background-color: #f2f2f2;
+            /* cursor: pointer; */
+        }
+        .tables td{
+            cursor: pointer;
+        }
+        .tables tr :nth-child(even){
+            background-color: #f9f9f9;
+        }
+        .tables tr:hover{
+            background-color: #f2f2f2;
+        }
+        .inv-1{
+            color: rgb(99, 88, 88) ;
+            background-color: white;
+            
+        }
+        .inv-1 button{
+            background-color: rgb(255, 167, 4);
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+
+        }
+        .inv-2{
+            color: rgb(99, 88, 88);
+            background-color: rgb(247, 244, 244);
+        }
+        .inv-2 button{
+            background-color: rgb(123, 240, 100);
+            border-radius: 3px;
+            border: none;
+            outline: none;
+            align-items: center;
+            font-size: 16px;
+            color: white;
+        }
+        .inv-3{
+            color: rgb(99, 88, 88);
+        }
+        .inv-3 button{
+            background-color: rgb(18, 78, 245);
+            color: white;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            align-items: center;
+        }
+        .inv-4{
+            color: rgb(99, 88, 88);
+            background-color: rgb(247, 244, 244) ;
+        }
+        .inv-4 button{
+            background-color: rgb(18, 78, 245);
+            color: white;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            align-items: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sales and Invoice Record</h2>
+        <div class="table-data">
+            <table class="tables">
+                <thead>
+                    <tr>
+                        
+                        <th>INVOICE</th>
+                        <th>NAME</th>
+                        <th>DATE</th>
+                        <th>PAYMENT STATUS</th>
+                        <th>AMOUNT</th>
+                        
+                    </tr>
+                </thead>
+                <tbody class="inv-1">
+                    <tr>
+                        
+                        <td>NA</td>
+                        <td>Danish</td>
+                        <td>01/04/2022</td>
+                        <td ><button>Not Completed</button></td>
+                        <td>22,000</td>
+                        
+
+                    </tr>
+                </tbody>
+                <tbody class="inv-2">
+                    <tr>
+                        
+                        <td>INV_1</td>
+                        <td>Ahmad</td>
+                        <td>01/04/2022</td>
+                        <td><button>Completed</button></td>
+                        <td>23,000</td>
+                    </tr>
+                </tbody>
+                <tbody class="inv-3">
+                    <tr>
+                        
+                        <td>INV_2</td>
+                        <td>Arham</td>
+                        <td>01/04/2022</td>
+                        <td><button>Processing....</button></td>
+                        <td>28,000</td>
+                    </tr>
+                    
+                </tbody>
+                <tbody class="inv-4">
+                    <tr>
+                        
+                        <td>INV_3</td>
+                        <td>Zeeshan</td>
+                        <td>01/04/2022</td>
+                        <td><button>Processing....</button></td>
+                        <td>25,000</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
